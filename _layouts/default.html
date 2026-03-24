@@ -11,24 +11,21 @@ published: true
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 		<style>
 			body { margin: 0; padding: 0; background: #fff; }
-			/* Shared container — centers everything and caps width */
-			.site-container { max-width: 1200px; margin: 0 auto; width: 100%; }
-			/* Banner fills the container width */
+			/* Shared centered container — nav and content both live inside this */
+			.site-container { max-width: 1200px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 20px; }
+			/* Banner: full viewport width, image fills the container */
 			.site-header { width: 100%; line-height: 0; }
-			.site-header .site-container { line-height: 0; }
+			.site-header .site-container { padding: 0; }
 			.site-header img { width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block; }
-			/* Nav: spread items edge-to-edge inside the container */
+			/* Nav: items spread from left edge to right edge of container */
 			.site-nav { background-color: #fff; border-bottom: 1px solid #eaeaea; padding: 16px 0; }
-			.site-nav .site-container { padding: 0 20px; }
 			.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 			.site-nav ul li a { text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none; }
 			.site-nav ul li a:hover { color: #000; border-bottom: 2px solid #000; }
 			.site-nav ul li.active a { font-weight: bold; color: #000; pointer-events: none; }
-			/* Content: 85% width, centered within the container */
-			.site-content { padding: 40px 20px; }
-			.site-content-inner { width: 85%; margin: 0 auto; }
+			/* Content: 100% of container — same left/right edges as nav */
+			.site-content { padding: 40px 0; }
 			@media (max-width: 600px) {
-				.site-content-inner { width: 100%; }
 				.site-nav ul { justify-content: center; gap: 16px; }
 			}
 		</style>
@@ -75,9 +72,7 @@ published: true
 		<!-- Page Content -->
 		<main class="site-content">
 			<div class="site-container">
-				<div class="site-content-inner">
-					{{ content }}
-				</div>
+				{{ content }}
 			</div>
 		</main>
 
