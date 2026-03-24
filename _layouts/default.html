@@ -8,66 +8,59 @@ published: true
 
 	<head>
 		{% include head.html %}
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+		<style>
+			body { margin: 0; padding: 0; }
+			.site-header { width: 100%; margin: 0; padding: 0; display: block; line-height: 0; }
+			.site-header img { width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block; }
+			.site-nav { background-color: #fff; border-bottom: 1px solid #eaeaea; padding: 18px 0; }
+			.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 28px; }
+			.site-nav ul li a { text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none; }
+			.site-nav ul li a:hover { color: #000; border-bottom: 2px solid #000; }
+			.site-nav ul li.active a { font-weight: bold; color: #000; pointer-events: none; }
+			.site-content { padding: 40px 20px; }
+			@media (min-width: 768px) { .site-content { padding: 50px 60px; } }
+		</style>
 	</head>
 
-	<body style="margin: 0; padding: 0;">
+	<body>
 
-		<!-- Hero Banner at Top -->
-		<div style="width: 100%; margin: 0; padding: 0; background: #fff;">
-			<img src="{{ "/img/projects/tithy.png" | prepend: site.baseurl }}" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block; margin: 0;">
-		</div>
+		<!-- Hero Banner -->
+		<header class="site-header">
+			<img src="{{ site.baseurl }}/img/projects/tithy.png" alt="Suraiya Ahmed">
+		</header>
 
-		<!-- Navigation Below Banner -->
-		<nav style="text-align: center; padding: 20px 0; border-bottom: 1px solid #eaeaea; background-color: #fff;">
-			<ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
-				{% if page.url != '/about' %}
-					<li><a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">About</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">About</a></li>
-				{% endif %}
-				
-				{% if page.url != '/experience' %}
-					<li><a href="{{ '/experience' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Experience</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Experience</a></li>
-				{% endif %}
-				
-				{% if page.url != '/education' %}
-					<li><a href="{{ '/education' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Education</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Education</a></li>
-				{% endif %}
-				
-				{% if page.url != '/certifications' %}
-					<li><a href="{{ '/certifications' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Certifications</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Certifications</a></li>
-				{% endif %}
-				
-				{% if page.url != '/talks' %}
-					<li><a href="{{ '/talks' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Talks</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Talks</a></li>
-				{% endif %}
-				
-				{% if page.url != '/blog' %}
-					<li><a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Blog</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Blog</a></li>
-				{% endif %}
-				
-				{% if page.url != '/contact' %}
-					<li><a href="{{ '/contact' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Contact</a></li>
-				{% else %}
-					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Contact</a></li>
-				{% endif %}
+		<!-- Navigation -->
+		<nav class="site-nav">
+			<ul>
+				<li{% if page.url == '/about' or page.url contains 'about' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/about">About</a>
+				</li>
+				<li{% if page.url contains 'experience' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/experience">Experience</a>
+				</li>
+				<li{% if page.url contains 'education' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/education">Education</a>
+				</li>
+				<li{% if page.url contains 'certifications' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/certifications">Certifications</a>
+				</li>
+				<li{% if page.url contains 'talks' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/talks">Talks</a>
+				</li>
+				<li{% if page.url contains 'blog' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/blog">Blog</a>
+				</li>
+				<li{% if page.url contains 'contact' %} class="active"{% endif %}>
+					<a href="{{ site.baseurl }}/contact">Contact</a>
+				</li>
 			</ul>
 		</nav>
 
-		<!-- Content Below Navigation -->
-		<div id="content" style="padding-top: 40px;">
+		<!-- Page Content -->
+		<main class="site-content">
 			{{ content }}
-		</div>
+		</main>
 
 		{% include footer.html %}
 
