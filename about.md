@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-<img src="{{ "/img/projects/tithy.png" | prepend: site.baseurl }}" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 12px; margin: 20px 0; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+<img src="{{ "/img/projects/tithy.png" | prepend: site.baseurl }}" style="width: calc(100% + 40px); height: auto; max-height: 400px; object-fit: cover; border-radius: 8px; margin: -20px -20px 30px -20px; display: block;">
 
 ## About Me
 
