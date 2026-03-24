@@ -25,6 +25,8 @@ published: true
 			.site-nav ul li.active a { font-weight: bold; color: #000; pointer-events: none; }
 			/* Content: 100% of container — same left/right edges as nav */
 			.site-content { padding: 40px 0; }
+			/* Override theme's 550px article cap so content fills the container */
+			.site-content article { max-width: 100%; margin: 0; padding: 0; }
 			@media (max-width: 600px) {
 				.site-nav ul { justify-content: center; gap: 16px; }
 			}
