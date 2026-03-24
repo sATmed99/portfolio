@@ -6,7 +6,7 @@
 	{% assign prompt = 'Back to Index' %}
 
 	<a href="{{ link | prepend: site.baseurl | prepend: site.url }}">
-		<img src="{{ site.logo_url }}" class="logo-avatar">
+		<img src="{{ site.logo_url | prepend: site.baseurl }}" class="logo-avatar">
 	</a>
 	<span class="logo-prompt code">{{ prompt }}</span>
 </aside>

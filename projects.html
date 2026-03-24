@@ -30,7 +30,7 @@ title: Projects
 				</div>
 				<div class="title">
 					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-						<img src="{{ post.imageurl }}" alt="" style="width: 100%;">
+						<img src="{{ post.imageurl | prepend: site.baseurl }}" alt="" style="width: 100%;">
 						{{ post.title }}
 					</a>
 				</div>

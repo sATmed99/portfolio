@@ -2,6 +2,7 @@
 layout: post
 title: "Building High-Performance HR Systems: Data-Driven HR Strategy in Practice"
 date: 2024-09-10
+imageurl: /img/projects/hr-metrics.png
 categories: [HR Strategy, Data Analytics, Organizational Development]
 ---
 

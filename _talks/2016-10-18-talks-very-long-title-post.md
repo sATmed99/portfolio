@@ -1,9 +1,7 @@
 ---
 title: For Example of very Long Title Would Be Typography Elements in One
-type: talks
 date: 2016-10-18
-imageurl: /the-plain-academic/assets/preview-mycat.png
-authors: Someone
+imageurl: /img/projects/innovation.png
 ---
 
 **NOTE:** This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!

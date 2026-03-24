@@ -45,7 +45,7 @@ Explore my [**experience**](/experience) and [**education**](/education), review
 				<li>
 					<div class="title">
 						<a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}">
-							<img src="{{ item.imageurl }}" alt="" style="width: 100%;">
+							<img src="{{ item.imageurl | prepend: site.baseurl }}" alt="" style="width: 100%;">
 							{{ item.title }}
 						</a>
 					</div>

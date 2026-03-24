@@ -1,13 +1,93 @@
 ---
-title: For Example of very Long Title Would Be Typography Elements in One
-type: researches
+title: Typography & Formatting Reference
 date: 2016-10-18
-imageurl: /the-plain-academic/assets/preview-mycat.png
-authors: Someone
+imageurl: /img/projects/innovation.png
 status: accepted
 ---
 
-**NOTE:** This markdown cheatsheet is a typography demo for this theme. Check out this post to learn more about this markdown usage when you want to get started with this theme. Enjoy!
+**NOTE:** This page serves as a reference for markdown formatting and typography used throughout this portfolio.
+
+## Headings
+
+# Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+
+## Text Formatting
+
+**Bold text** or __bold text__
+
+*Italic text* or _italic text_
+
+***Bold and italic*** 
+
+~~Strikethrough text~~
+
+`Inline code`
+
+## Lists
+
+### Unordered Lists
+- Item 1
+- Item 2
+  - Nested item 2.1
+  - Nested item 2.2
+- Item 3
+
+### Ordered Lists
+1. First item
+2. Second item
+   1. Nested item 2.1
+   2. Nested item 2.2
+3. Third item
+
+## Blockquotes
+
+> This is a blockquote.
+> It can span multiple lines.
+
+> This is a nested blockquote level 1
+>> This is a nested blockquote level 2
+
+## Code
+
+Inline code: `var x = 5;`
+
+Code block:
+```python
+def hello_world():
+    print("Hello, World!")
+    return True
+```
+
+## Links & Images
+
+[Link to Example](https://example.com)
+
+![Alt text](/img/projects/innovation.png)
+
+## Horizontal Rule
+
+---
+
+## Tables
+
+| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Cell 1.1 | Cell 1.2 | Cell 1.3 |
+| Cell 2.1 | Cell 2.2 | Cell 2.3 |
+
+## Mathematical Expressions
+
+This portfolio supports mathematical equations using MathJax.
+
+Inline equation: $$ax^2 + bx + c = 0$$
+
+Display equation:
+$$\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 ## Typography Elements in One
 

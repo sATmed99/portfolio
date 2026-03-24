@@ -2,6 +2,7 @@
 layout: post
 title: "Finance Operations in SME Lending: Risk Assessment and Portfolio Management"
 date: 2024-12-15
+imageurl: /img/projects/hr-metrics.png
 categories: [Finance, Operations, Case Study]
 ---
 

@@ -1,57 +1,93 @@
-# The Plain Academic
+# Suraiya Ahmed - Professional Portfolio
 
-> The Plain Academic is a minimalist Jekyll theme, ideally designed for your academic site. This theme is a modified version of the [The Plain](https://github.com/heiswayi/the-plain).
+Professional portfolio showcasing expertise in finance operations management, human resource strategy, and organizational development.
 
-[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg)
+## About This Portfolio
 
-- **Demo:** https://brenov.github.io/the-plain-academic/
+This portfolio documents the professional journey of **Suraiya Ahmed**, a Finance Operations Manager and HR Strategist based in Dhaka, Bangladesh, with deep expertise in:
 
-![SCREENSHOT](img/img1.png)
+- **Finance Operations**: Financial modeling, portfolio management, credit assessment, and risk analysis in SME lending
+- **Human Resources**: HR systems design (HRIS), high-performance work systems (HPWS), and organizational development
+- **Strategic Analysis**: Data-driven decision making using Power BI, ERP systems, and advanced financial modeling
+- **Research & Publications**: Examining the intersection of finance operations, HR systems, and organizational performance
+- **Inclusive Design**: Gender-centered innovation and inclusive organizational systems
 
-![SCREENSHOT](img/img2.png)
+### Professional Highlights
 
-![SCREENSHOT](img/img3.png)
+- **Current Role**: Assistant Officer, Prime Finance & Investment Limited (July 2025 - Present)
+- **Education**: BBA in HR Management & Marketing, East West University (CGPA: 3.25/4.00)
+- **Certifications**: 
+  - Human-Centered Design for Inclusive Innovation (University of Toronto)
+  - HR Metrics to Drive HR Strategy (LinkedIn Learning - HRCI Certified)
+  - MySQL Database Design (upGrad)
+- **Language Proficiency**: English (IELTS: B2, Band 5.5), Bengali
 
-![SCREENSHOT](img/img4.png)
+### Portfolio Contents
 
-![SCREENSHOT](img/img5.png)
+- **Experience**: Professional roles in banking, finance, and fund management
+- **Education**: Academic background and professional development
+- **Certifications**: Detailed certification information and credentials
+- **Research**: Publications on HPWS/HRIS, SME lending, and organizational innovation
+- **Blog**: Insights on finance operations, HR strategy, and inclusive design
+- **Contact**: Direct communication channels for collaboration
 
-![SCREENSHOT](img/img6.png)
+---
 
-![SCREENSHOT](img/img7.png)
+## Technical Setup
 
-![SCREENSHOT](img/img8.png)
+### Local Development
 
-### On GitHub
+To run this portfolio locally:
 
-GitHub - for your user account pages or repository gh-pages - only supports a limited set of themes.
+```bash
+# Install Ruby dependencies
+bundle install
 
-Therefore, you need to use the 'remote\_theme:' setting instead of 'theme:', which is supported by [a 3rd party plugin](https://github.com/benbalter/jekyll-remote-theme).
+# Serve locally
+bundle exec jekyll serve
+```
 
-Put this in your *Gemfile*:
+Access at: http://localhost:4000/portfolio
 
-	gem 'jekyll-remote-theme'
+### Project Structure
 
-and run `bundle install` to install the plugin.
+- **_config.yml**: Site configuration with personal info
+- **Profile Pages**:
+  - `about.md`: Professional overview
+  - `education.md`: Academic and professional development
+  - `experience.md`: Career history and roles
+  - `certifications.md`: Detailed credentials
+  - `contact.md`: Contact information
 
-Add the following to your site's *_config.yml* to activate the plugin and to select this theme:
+- **Content Collections**:
+  - `_blog/`: Articles on finance, HR, and organizational topics
+  - `_researches/`: Published research papers
+  - `_projects/`: Professional projects
+  - `_talks/`: Talks and presentations
 
-	plugins:
-	  - jekyll-remote-theme
+- **Assets**:
+  - `img/projects/`: Images and profile materials
+  - `assets/`: Stylesheets
+  - `_layouts/`, `_includes/`: Template structure
 
-	remote_theme: heiswayi/the-plain
+### Configuration
 
-This will grab the theme directly from the GitHub repo.
+- **Base URL**: `/portfolio`
+- **Build Tool**: Jekyll with Kramdown
+- **Styling**: SCSS with custom responsive design
+- **Production URL**: https://suraiyaahmed.com/portfolio
 
-Now copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+---
 
-## Authors
+## Quick Links
 
-- [**Breno Viana**](https://brenomfviana.github.io/);
-- [**Heiswayi Nrird**](https://heiswayi.nrird.com) (the author of [The Plain](https://github.com/heiswayi/the-plain)).
+- **Email**: suraiyatithy@gmail.com
+- **Phone**: (+880) 1869308140
+- **LinkedIn**: linkedin.com/in/suraiyatithy
+- **Location**: Dhaka, Bangladesh
 
-See also the list of [contributors](https://github.com/brenov/the-plain-academic/graphs/contributors) who participated in the this project.
+---
 
 ## License
 
-This project is licensed under MIT license - see the [MIT](LICENSE) file for details.
+© {{ site.time | date: '%Y' }} Suraiya Ahmed. All rights reserved.

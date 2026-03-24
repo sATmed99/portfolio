@@ -2,6 +2,7 @@
 layout: post
 title: "Inclusive Design in Organizational Systems: Lessons from the University of Toronto"
 date: 2023-06-15
+imageurl: /img/projects/innovation.png
 categories: [Inclusive Design, HR Strategy, Innovation]
 ---
 

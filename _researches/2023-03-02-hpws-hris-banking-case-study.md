@@ -2,6 +2,7 @@
 layout: post
 title: "The Impact of HPWS and HRIS on Employee Performance: A Banking Sector Case Study"
 date: 2023-03-02
+imageurl: /img/projects/hr-metrics.png
 categories: [Research, Human Resources]
 ---
 
