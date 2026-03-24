@@ -10,16 +10,27 @@ published: true
 		{% include head.html %}
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 		<style>
-			body { margin: 0; padding: 0; }
-			.site-header { width: 100%; margin: 0; padding: 0; display: block; line-height: 0; }
-			.site-header img { width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block; }
-			.site-nav { background-color: #fff; border-bottom: 1px solid #eaeaea; padding: 18px 0; }
-			.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 28px; }
+			body { margin: 0; padding: 0; background: #fff; }
+			/* Shared container — centers everything and caps width */
+			.site-container { max-width: 1200px; margin: 0 auto; width: 100%; }
+			/* Banner fills the container width */
+			.site-header { width: 100%; line-height: 0; }
+			.site-header .site-container { line-height: 0; }
+			.site-header img { width: 100%; height: auto; max-height: 420px; object-fit: cover; display: block; }
+			/* Nav: spread items edge-to-edge inside the container */
+			.site-nav { background-color: #fff; border-bottom: 1px solid #eaeaea; padding: 16px 0; }
+			.site-nav .site-container { padding: 0 20px; }
+			.site-nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
 			.site-nav ul li a { text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none; }
 			.site-nav ul li a:hover { color: #000; border-bottom: 2px solid #000; }
 			.site-nav ul li.active a { font-weight: bold; color: #000; pointer-events: none; }
+			/* Content: 85% width, centered within the container */
 			.site-content { padding: 40px 20px; }
-			@media (min-width: 768px) { .site-content { padding: 50px 60px; } }
+			.site-content-inner { width: 85%; margin: 0 auto; }
+			@media (max-width: 600px) {
+				.site-content-inner { width: 100%; }
+				.site-nav ul { justify-content: center; gap: 16px; }
+			}
 		</style>
 	</head>
 
@@ -27,39 +38,47 @@ published: true
 
 		<!-- Hero Banner -->
 		<header class="site-header">
-			<img src="{{ site.baseurl }}/img/projects/tithy.png" alt="Suraiya Ahmed">
+			<div class="site-container">
+				<img src="{{ site.baseurl }}/img/projects/tithy.png" alt="Suraiya Ahmed">
+			</div>
 		</header>
 
 		<!-- Navigation -->
 		<nav class="site-nav">
-			<ul>
-				<li{% if page.url == '/about' or page.url contains 'about' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/about">About</a>
-				</li>
-				<li{% if page.url contains 'experience' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/experience">Experience</a>
-				</li>
-				<li{% if page.url contains 'education' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/education">Education</a>
-				</li>
-				<li{% if page.url contains 'certifications' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/certifications">Certifications</a>
-				</li>
-				<li{% if page.url contains 'talks' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/talks">Talks</a>
-				</li>
-				<li{% if page.url contains 'blog' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/blog">Blog</a>
-				</li>
-				<li{% if page.url contains 'contact' %} class="active"{% endif %}>
-					<a href="{{ site.baseurl }}/contact">Contact</a>
-				</li>
-			</ul>
+			<div class="site-container">
+				<ul>
+					<li{% if page.url == '/about' or page.url contains 'about' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/about">About</a>
+					</li>
+					<li{% if page.url contains 'experience' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/experience">Experience</a>
+					</li>
+					<li{% if page.url contains 'education' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/education">Education</a>
+					</li>
+					<li{% if page.url contains 'certifications' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/certifications">Certifications</a>
+					</li>
+					<li{% if page.url contains 'talks' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/talks">Talks</a>
+					</li>
+					<li{% if page.url contains 'blog' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/blog">Blog</a>
+					</li>
+					<li{% if page.url contains 'contact' %} class="active"{% endif %}>
+						<a href="{{ site.baseurl }}/contact">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 
 		<!-- Page Content -->
 		<main class="site-content">
-			{{ content }}
+			<div class="site-container">
+				<div class="site-content-inner">
+					{{ content }}
+				</div>
+			</div>
 		</main>
 
 		{% include footer.html %}
