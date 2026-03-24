@@ -10,14 +10,61 @@ published: true
 		{% include head.html %}
 	</head>
 
-	<body style="padding-top: 0; margin-top: 0;">
+	<body style="margin: 0; padding: 0;">
 
-		{% include header.html %}
-
-		<div style="width: 100%; margin: 0; padding: 40px 0 0 0; background: #fff;">
+		<!-- Hero Banner at Top -->
+		<div style="width: 100%; margin: 0; padding: 0; background: #fff;">
 			<img src="{{ "/img/projects/tithy.png" | prepend: site.baseurl }}" style="width: 100%; height: auto; max-height: 400px; object-fit: cover; display: block; margin: 0;">
 		</div>
 
+		<!-- Navigation Below Banner -->
+		<nav style="text-align: center; padding: 20px 0; border-bottom: 1px solid #eaeaea; background-color: #fff;">
+			<ul style="list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; gap: 30px;">
+				{% if page.url != '/about' %}
+					<li><a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">About</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">About</a></li>
+				{% endif %}
+				
+				{% if page.url != '/experience' %}
+					<li><a href="{{ '/experience' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Experience</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Experience</a></li>
+				{% endif %}
+				
+				{% if page.url != '/education' %}
+					<li><a href="{{ '/education' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Education</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Education</a></li>
+				{% endif %}
+				
+				{% if page.url != '/certifications' %}
+					<li><a href="{{ '/certifications' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Certifications</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Certifications</a></li>
+				{% endif %}
+				
+				{% if page.url != '/talks' %}
+					<li><a href="{{ '/talks' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Talks</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Talks</a></li>
+				{% endif %}
+				
+				{% if page.url != '/blog' %}
+					<li><a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Blog</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Blog</a></li>
+				{% endif %}
+				
+				{% if page.url != '/contact' %}
+					<li><a href="{{ '/contact' | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: #333; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Contact</a></li>
+				{% else %}
+					<li style="font-weight: bold;"><a style="text-decoration: none; color: #000; font-family: 'Cutive Mono', monospace; font-size: 14px; border: none;">Contact</a></li>
+				{% endif %}
+			</ul>
+		</nav>
+
+		<!-- Content Below Navigation -->
 		<div id="content" style="padding-top: 40px;">
 			{{ content }}
 		</div>
