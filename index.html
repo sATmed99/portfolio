@@ -33,12 +33,12 @@ layout: default
 
 	<div class="divider"></div>
 
-	{% assign sorted = ((site.documents | sort: date) | reverse) %}
+	{% assign sorted = site.documents | sort: "date" | reverse %}
 	{% assign recent_activities = "" | split: "/" %}
 	{% for post in sorted limit:5 %}
 		{% assign recent_activities = recent_activities | push: post %}
 	{% endfor %}
-	{% assign recent_activities = (recent_activities | group_by: "type") %}
+	{% assign recent_activities = recent_activities | group_by: "type" %}
 	{% for group in recent_activities %}
 		{% assign anitem = group.items | first %}
 		<h3 class="code" style="text-transform: capitalize; margin-top: 40px;">{{ anitem.type }}</h3>
