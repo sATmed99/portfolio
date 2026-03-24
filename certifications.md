@@ -14,6 +14,8 @@ All certifications have been completed and verified through their respective iss
 **Date Completed:** 2023  
 **Specialization:** Gender Analytics - Gender Equity through Inclusive Design
 
+<img src="{{ "/img/projects/innovation.png" | prepend: site.baseurl }}" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 20px 0;">
+
 ### About This Certification
 This comprehensive online course was offered through the Institute for Gender and the Economy (GATE) at the University of Toronto's Rotman School of Management. It provides advanced training in human-centered design methodologies with a focus on creating inclusive solutions for diverse populations.
 
@@ -38,6 +40,8 @@ This comprehensive online course was offered through the Institute for Gender an
 **Date Completed:** September 22, 2022  
 **Recertification Credits:** 1.25 hours (HRCI)
 
+<img src="{{ "/img/projects/hr-metrics.png" | prepend: site.baseurl }}" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 20px 0;">
+
 ### About This Certification
 Certified through the HR Certification Institute (HRCI), this course focuses on leveraging data analytics and metrics to make strategic human resource decisions. The training emphasizes alignment between HR metrics and organizational performance.
 
@@ -61,7 +65,9 @@ Certified through the HR Certification Institute (HRCI), this course focuses on 
 **Issuer:** upGrad  
 **Date Completed:** September 23, 2022  
 **Co-signer:** Mayank Kumar, Co-founder & MD
-![MySQL Database Design](/img/projects/mysql.png)
+
+<img src="{{ "/img/projects/mysql.png" | prepend: site.baseurl }}" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px; margin: 20px 0;">
+
 ### About This Certification
 A foundational certification in relational database design and SQL fundamentals. This course provides essential knowledge in database architecture, data modeling, and MySQL implementation.
 
