@@ -3,8 +3,6 @@ layout: page
 title: About
 ---
 
-<img src="{{ "/img/projects/tithy.png" | prepend: site.baseurl }}" style="width: calc(100% + 40px); height: auto; max-height: 400px; object-fit: cover; border-radius: 8px; margin: -20px -20px 30px -20px; display: block;">
-
 ## About Me
 
 I'm **Suraiya Ahmed**, a Finance Operations Manager and HR Specialist with a passion for building efficient systems and inclusive work environments. Currently, I work at **Prime Finance & Investment Limited** in Dhaka, Bangladesh, where I manage institutional fund operations and drive strategic HR initiatives.
