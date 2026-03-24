@@ -317,7 +317,8 @@ section {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-      @media (min-width: 992px) {a {
+      @media (min-width: 992px) {
+        a {
           border-bottom: 2px solid transparent;
           &:hover {
             border-color: #000;
@@ -327,7 +328,8 @@ section {
     }
   }
 }
-@keyframes bounce {0% {
+@keyframes bounce {
+  0% {
     transform: translate3d( 0, -1000px, 0 );
   }
   60% {
