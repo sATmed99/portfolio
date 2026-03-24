@@ -25,8 +25,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
+          bundler-cache: false
+
+      - name: Install dependencies
+        run: |
+          gem install bundler --no-document
+          bundle install --jobs 4 --retry 3
 
       - name: Setup Pages
         id: pages
@@ -35,7 +39,6 @@ jobs:
       - name: Build with Jekyll
         run: |
           bundle exec jekyll build \
-            --baseurl "${{ steps.pages.outputs.base_path }}" \
             --source . \
             --destination ./_site
         env:
@@ -55,4 +58,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
