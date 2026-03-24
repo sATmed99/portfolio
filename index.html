@@ -39,14 +39,14 @@ Explore my [**experience**](/experience) and [**education**](/education), review
 	{% assign recent_activities = (recent_activities | group_by: "type") %}
 	{% for group in recent_activities %}
 		{% assign anitem = group.items | first %}
-		<h3 class="code" style="text-transform: capitalize;">{{ anitem.type }}</h3>
+		<h3 class="code" style="text-transform: capitalize; margin-top: 40px;">{{ anitem.type }}</h3>
 		{% for item in group.items %}
 			<ul>
 				<li>
 					<div class="title">
 						<a href="{{ item.url | prepend: site.baseurl | prepend: site.url }}">
-							<img src="{{ item.imageurl | prepend: site.baseurl }}" alt="" style="width: 100%;">
-							{{ item.title }}
+							<img src="{{ item.imageurl | prepend: site.baseurl }}" alt="{{ item.title }}" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px;">
+							<h3 style="margin-top: 12px; margin-bottom: 0;">{{ item.title }}</h3>
 						</a>
 					</div>
 				</li>

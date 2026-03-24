@@ -6,7 +6,7 @@ logo_url:           /img/projects/suraiya.JPG # Profile photo
 
 # Site Settings
 url:                https://sATmed99.github.io # GitHub Pages URL
-baseurl:            "" # empty for main GitHub Pages site
+baseurl:            /portfolio # IMPORTANT: Must match GitHub Pages deployment path
 permalink:          /:title # Post permalink
 timezone:           America/Recife # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to 'false' to disable

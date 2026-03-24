@@ -420,6 +420,102 @@ section {
     }
   }
 }
+
+// ============================================
+// MODERN RESPONSIVE IMAGE & LAYOUT STYLES
+// ============================================
+
+// Responsive image sizing for preview thumbnails
+section ul li img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Logo avatar responsive sizing
+.logo a .logo-avatar {
+  width: 100%;
+  height: auto;
+  max-width: 90px;
+  object-fit: cover;
+}
+
+// Article images responsive
+article img {
+  border-radius: 6px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  
+  &.image {
+    margin: 30px 0;
+  }
+}
+
+// Blog/Research/Project list styling
+section ul li {
+  transition: all 0.3s ease;
+  padding: 15px;
+  border-radius: 8px;
+  
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+// Responsive typography
+@media (max-width: 768px) {
+  section ul li img {
+    max-height: 200px;
+  }
+  
+  article {
+    padding: 0 10px;
+  }
+}
+
+// Minimalist divider enhancement
+.divider {
+  opacity: 0.6;
+  margin: 2.5em 0 !important;
+}
+
+// Better spacing for lists
+section ul li {
+  margin: 30px 0 !important;
+  border-left: 3px solid transparent;
+  padding-left: 15px;
+  
+  &:hover {
+    border-left-color: #f14e32;
+  }
+}
+
+// Smooth transitions for links
+a {
+  transition: all 0.3s ease;
+}
+
+// Better button-like styling for post titles
+section ul li a {
+  display: block;
+  border: none;
+  
+  &:hover {
+    color: #f14e32;
+    transition: color 0.3s ease;
+  }
+}
+
 @keyframes bounce {0% {
     transform: translate3d( 0, -1000px, 0 );
   }
