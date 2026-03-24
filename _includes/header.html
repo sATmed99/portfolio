@@ -1,63 +1,50 @@
 <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 
-<aside class="logo">
+<header style="position: sticky; top: 0; background: #fff; border-bottom: 1px solid #eee; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+	
+	<div style="display: flex; align-items: center; gap: 20px;">
+		<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" style="display: inline-block; border: none;">
+			<img src="{{ site.logo_url | prepend: site.baseurl }}" style="width: 50px; height: 50px; border-radius: 8px; object-fit: cover;">
+		</a>
+		<a href="{{ '/' | prepend: site.baseurl | prepend: site.url }}" style="border: none; text-decoration: none; color: #000; font-weight: bold; font-size: 16px;">Suraiya Ahmed</a>
+	</div>
 
-	{% assign link = '/' %}
-	{% assign prompt = 'Back to Index' %}
-
-	<a href="{{ link | prepend: site.baseurl | prepend: site.url }}">
-		<img src="{{ site.logo_url | prepend: site.baseurl }}" class="logo-avatar">
-	</a>
-	<span class="logo-prompt code">{{ prompt }}</span>
-</aside>
-
-<aside class="menu">
-
-	<ul class="top-menu">
+	<nav style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0; font-size: 14px;">
 		{% if page.url != '/about' %}
-			{% assign link = '/about' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> About </a> </li>
+			<a href="{{ '/about' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">About</a>
 		{% else %}
-			<li style="font-weight:bold;"> <a> About </a> </li>
+			<span style="font-weight: bold; color: #000;">About</span>
 		{% endif %}
+		
 		{% if page.url != '/experience' %}
-			{% assign link = '/experience' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> Experience </a> </li>
+			<a href="{{ '/experience' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Experience</a>
 		{% else %}
-			<li style="font-weight:bold;"> <a> Experience </a> </li>
+			<span style="font-weight: bold; color: #000;">Experience</span>
 		{% endif %}
+		
 		{% if page.url != '/education' %}
-			{% assign link = '/education' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> Education </a> </li>
+			<a href="{{ '/education' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Education</a>
 		{% else %}
-			<li style="font-weight:bold;"> <a> Education </a> </li>
+			<span style="font-weight: bold; color: #000;">Education</span>
 		{% endif %}
+		
 		{% if page.url != '/certifications' %}
-			{% assign link = '/certifications' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> Certifications </a> </li>
+			<a href="{{ '/certifications' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Certifications</a>
 		{% else %}
-			<li style="font-weight:bold;"> <a> Certifications </a> </li>
+			<span style="font-weight: bold; color: #000;">Certifications</span>
 		{% endif %}
-	</ul>
-	<ul class="bottom-menu">
-		{% if page.url != '/talks' %}
-			{% assign link = '/talks' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> Talks </a> </li>
-		{% else %}
-			<li style="font-weight:bold;"> <a> Talks </a> </li>
-		{% endif %}
+		
 		{% if page.url != '/blog' %}
-			{% assign link = '/blog' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> Blog </a> </li>
+			<a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Blog</a>
 		{% else %}
-			<li style="font-weight:bold;"> <a> Blog </a> </li>
+			<span style="font-weight: bold; color: #000;">Blog</span>
 		{% endif %}
+		
 		{% if page.url != '/contact' %}
-			{% assign link = '/contact' %}
-			<li> <a href="{{ link | prepend: site.baseurl | prepend: site.url }}"> Contact </a> </li>
+			<a href="{{ '/contact' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Contact</a>
 		{% else %}
-			<li style="font-weight:bold;"> <a> Contact </a> </li>
+			<span style="font-weight: bold; color: #000;">Contact</span>
 		{% endif %}
-	</ul>
+	</nav>
 
-</aside>
+</header>
