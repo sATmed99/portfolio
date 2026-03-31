@@ -49,8 +49,8 @@ title: Projects
 	}
 	
 	.project-gallery {
-		display: grid !important;
-		grid-template-columns: repeat(3, 1fr) !important;
+		display: flex !important;
+		flex-wrap: wrap !important;
 		gap: 30px !important;
 		margin-top: 16px !important;
 		width: 100% !important;
@@ -59,6 +59,7 @@ title: Projects
 	.gallery-item {
 		display: flex;
 		flex-direction: column;
+		flex: 0 0 calc(33.333% - 20px);
 	}
 	
 	.gallery-item img {
@@ -68,7 +69,7 @@ title: Projects
 		border-radius: 8px;
 		margin-bottom: 8px;
 		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-		min-height: 600px;
+		min-height: 500px;
 	}
 	
 	.gallery-caption {
@@ -113,10 +114,10 @@ title: Projects
 					<div class="post-date code">
 						{{ post.date | date: "%B %d, %Y" }}
 					</div>
-					<div class="project-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 16px; width: 100%;">
+					<div class="project-gallery" style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 16px; width: 100%;">
 						{% for gallery_item in post.gallery %}
-							<div class="gallery-item" style="display: flex; flex-direction: column;">
-								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}" style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); min-height: 600px;">
+							<div class="gallery-item" style="display: flex; flex-direction: column; flex: 0 0 calc(33.333% - 20px);">
+								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}" style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); min-height: 500px;">
 								<div class="gallery-caption">{{ gallery_item.caption }}</div>
 							</div>
 						{% endfor %}
