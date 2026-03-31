@@ -99,10 +99,9 @@ title: Projects
 
 	<div class="divider"></div>
 
-	{% assign filtered = site.projects | where_exp: "item", "item.path contains '/insights_hub/' == false" | where: "title", "Global Startup Analytics Hub" %}
+	{% assign filtered = site.projects | where: "title", "Global Startup Analytics Hub" %}
 	{% assign sorted = filtered | sort: "date" | reverse %}
 	{% for post in sorted %}
-		{% if post.title %}
 		{% unless post.next %}
 			<h3 class="code year-header">{{ post.date | date: '%Y' }}</h3>
 		{% else %}
@@ -137,7 +136,6 @@ title: Projects
 				{% endif %}
 			</a>
 		</div>
-		{% endif %}
 
 	{% endfor %}
 
