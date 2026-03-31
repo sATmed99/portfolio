@@ -1,7 +1,7 @@
 ---
 title: Fintech Audit
 layout: project
-imageurl: /_projects/fintech-audit/fintech_audit.gif
+imageurl: /img/projects/fintech-audit/fintech_audit.gif
 date: 2026-03-31
 description: Digital transformation audit of German banking sector, with Power BI analytics and business model redesign.
 ---
@@ -15,6 +15,6 @@ A comprehensive digital audit and business model redesign for the German Sparkas
 - **Data Pipeline**: Python ETL, Power BI analytics
 - **Case Study**: DigiBIM methodology, digital pain points, and redesign strategy
 
-![Fintech Audit Animation](/_projects/fintech-audit/fintech_audit.gif)
+![Fintech Audit Animation](/img/projects/fintech-audit/fintech_audit.gif)
 
 See detailed documentation in project markdown files.
