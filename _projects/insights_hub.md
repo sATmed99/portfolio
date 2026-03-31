@@ -1,7 +1,7 @@
 ---
 title: Global Startup Analytics Hub
 date: 2026-03-31
-imageurl: /portfolio/img/projects/insights_hub.png
+imageurl: /img/projects/insights_hub.png
 ---
 
 # Global Startup Analytics Hub 🌍
@@ -46,27 +46,27 @@ Global Startup Analytics Hub delivers enterprise-grade data analytics and visual
 The platform includes comprehensive data visualization capabilities showcasing startup ecosystems:
 
 #### City Intelligence Dashboard
-![City Intelligence – Comparative analysis of top cities by attractiveness, votes, and funding.](/portfolio/img/projects/insights_hub/City_Intelligence.png)
+![City Intelligence – Comparative analysis of top cities by attractiveness, votes, and funding.](/img/projects/insights_hub/City_Intelligence.png)
 *Real-time KPIs and top 15 cities ranked by attractiveness index, providing market intelligence for ecosystem analysis.*
 
 #### Germany Deep Dive
-![Germany Deep Dive – Detailed analytics of German tech cities, including city rankings, funding, and attractiveness.](/portfolio/img/projects/insights_hub/Germany_Deep_Dive.png)
+![Germany Deep Dive – Detailed analytics of German tech cities, including city rankings, funding, and attractiveness.](/img/projects/insights_hub/Germany_Deep_Dive.png)
 *Specialized regional analysis of German startup hubs, featuring city comparisons, sector distribution, and detailed city metrics.*
 
 #### Sector Distribution
-![Sector Distribution – Visualization of startup sector specialization and distribution across cities.](/portfolio/img/projects/insights_hub/Sector_Distribution.png)
+![Sector Distribution – Visualization of startup sector specialization and distribution across cities.](/img/projects/insights_hub/Sector_Distribution.png)
 *Cross-sectional analysis of Fintech, SaaS, Healthtech, and Edtech sectors across major metro areas with attractiveness heatmaps.*
 
 #### Undervalued Cities
-![Undervalued Cities – Identification and analysis of cities with high potential but low current recognition.](/portfolio/img/projects/insights_hub/Undervalued_Cities.png)
+![Undervalued Cities – Identification and analysis of cities with high potential but low current recognition.](/img/projects/insights_hub/Undervalued_Cities.png)
 *Investment opportunity analysis identifying high-attractiveness, low-recognition cities with rising status indicators.*
 
 #### Votes Distribution
-![Votes Distribution – Funding vs. votes and city status breakdown for ecosystem insights.](/portfolio/img/projects/insights_hub/Vote_Distribution.png)
+![Votes Distribution – Funding vs. votes and city status breakdown for ecosystem insights.](/img/projects/insights_hub/Vote_Distribution.png)
 *Correlation analysis between community votes and funding levels, with city status distribution metrics.*
 
 #### Sector Statistics
-![Sector Statistics – Tabular summary of startup counts by sector for ecosystem benchmarking.](/portfolio/img/projects/insights_hub/Sector_Statistics.jpg)
+![Sector Statistics – Tabular summary of startup counts by sector for ecosystem benchmarking.](/img/projects/insights_hub/Sector_Statistics.jpg)
 *Detailed sector-by-city breakdown showing startup distribution patterns: Fintech (965), SaaS (995), Healthtech (485), Edtech (370), Deeptech (360).*
 
 ## Technologies & Stack
