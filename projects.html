@@ -44,21 +44,16 @@ title: Projects
 	
 	.project-gallery {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 30px;
 		margin-top: 16px;
 		width: 100%;
 	}
 	
 	@media (max-width: 768px) {
 		.project-gallery {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-	
-	@media (max-width: 480px) {
-		.project-gallery {
 			grid-template-columns: 1fr;
+			gap: 20px;
 		}
 	}
 	
@@ -70,7 +65,7 @@ title: Projects
 	.gallery-item img {
 		width: 100%;
 		height: auto;
-		max-height: 250px;
+		max-height: 400px;
 		object-fit: cover;
 		border-radius: 8px;
 		margin-bottom: 8px;
