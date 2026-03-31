@@ -99,7 +99,8 @@ title: Projects
 
 	<div class="divider"></div>
 
-	{% assign sorted = site.projects | sort: "date" | reverse %}
+	{% assign filtered = site.projects | where_exp: "item", "item.path contains '/insights_hub/' == false" %}
+	{% assign sorted = filtered | sort: "date" | reverse %}
 	{% for post in sorted %}
 		{% if post.title %}
 		{% unless post.next %}
