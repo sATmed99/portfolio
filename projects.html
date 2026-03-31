@@ -44,9 +44,22 @@ title: Projects
 	
 	.project-gallery {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(3, 1fr);
 		gap: 20px;
 		margin-top: 16px;
+		width: 100%;
+	}
+	
+	@media (max-width: 768px) {
+		.project-gallery {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	
+	@media (max-width: 480px) {
+		.project-gallery {
+			grid-template-columns: 1fr;
+		}
 	}
 	
 	.gallery-item {
