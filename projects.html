@@ -76,53 +76,58 @@ title: Projects
 	}
 </style>
 
-<section>
 
+<section>
 	<div class="center">
 		<h1 class="title">Projects</h1>
 	</div>
-
 	<div class="divider"></div>
 
-	{% assign filtered = site.projects | where: "title", "Global Startup Analytics Hub" %}
-	{% assign sorted = filtered | sort: "date" | reverse %}
-	{% for post in sorted %}
-		{% unless post.next %}
-			<h3 class="code year-header">{{ post.date | date: '%Y' }}</h3>
-		{% else %}
-			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-			{% if year != nyear %}
-				<h3 class="code year-header">{{ post.date | date: '%Y' }}</h3>
-			{% endif %}
-		{% endunless %}
-
-		<div class="project-item">
-			<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-				{% if post.gallery %}
-					<h3>{{ post.title }}</h3>
-					<div class="post-date code">
-						{{ post.date | date: "%B %d, %Y" }}
-					</div>
-					<div class="project-gallery" style="display: block !important; margin-top: 16px !important; width: 100% !important; position: relative !important;">
-						{% for gallery_item in post.gallery %}
-							<div class="gallery-item" style="display: inline-block !important; width: 32% !important; margin: 0 0.66% 20px 0.66% !important; vertical-align: top !important; box-sizing: border-box !important;">
-								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}" style="width: 100% !important; height: auto !important; object-fit: contain !important; border-radius: 8px !important; margin-bottom: 8px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important; display: block !important;">
-								<div class="gallery-caption">{{ gallery_item.caption }}</div>
-							</div>
-						{% endfor %}
-						<div style="clear: both !important;"></div>
-					</div>
-				{% else %}
-					<img src="{{ post.imageurl | prepend: site.baseurl }}" alt="{{ post.title }}">
-					<h3>{{ post.title }}</h3>
-					<div class="post-date code">
-						{{ post.date | date: "%B %d, %Y" }}
-					</div>
-				{% endif %}
-			</a>
+	<!-- Insights Hub Project -->
+	<div class="project-item">
+		<h3>Global Startup Analytics Hub</h3>
+		<div class="post-date code">2026-03-31</div>
+		<div class="project-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 24px; width: 100%;">
+			<div class="gallery-item">
+				<img src="{{ '/img/projects/insights_hub/City_Intelligence.png' | prepend: site.baseurl }}" alt="City Intelligence - Top cities by attractiveness, votes, and funding">
+				<div class="gallery-caption">City Intelligence - Top cities by attractiveness, votes, and funding</div>
+			</div>
+			<div class="gallery-item">
+				<img src="{{ '/img/projects/insights_hub/Germany_Deep_Dive.png' | prepend: site.baseurl }}" alt="Germany Deep Dive - German tech cities analytics">
+				<div class="gallery-caption">Germany Deep Dive - German tech cities analytics</div>
+			</div>
+			<div class="gallery-item">
+				<img src="{{ '/img/projects/insights_hub/Sector_Distribution.png' | prepend: site.baseurl }}" alt="Sector Distribution - Startup sector across cities">
+				<div class="gallery-caption">Sector Distribution - Startup sector across cities</div>
+			</div>
+			<div class="gallery-item">
+				<img src="{{ '/img/projects/insights_hub/Undervalued_Cities.png' | prepend: site.baseurl }}" alt="Undervalued Cities - High potential cities">
+				<div class="gallery-caption">Undervalued Cities - High potential cities</div>
+			</div>
+			<div class="gallery-item">
+				<img src="{{ '/img/projects/insights_hub/Vote_Distribution.png' | prepend: site.baseurl }}" alt="Votes Distribution - Funding vs votes analysis">
+				<div class="gallery-caption">Votes Distribution - Funding vs votes analysis</div>
+			</div>
+			<div class="gallery-item">
+				<img src="{{ '/img/projects/insights_hub/Sector_Statistics.jpg' | prepend: site.baseurl }}" alt="Sector Statistics - Startup counts by sector">
+				<div class="gallery-caption">Sector Statistics - Startup counts by sector</div>
+			</div>
 		</div>
+		<div style="margin-top: 18px;">
+			<a href="{{ '/projects/insights_hub' | prepend: site.baseurl }}" class="btn">View Project Details</a>
+		</div>
+	</div>
 
-	{% endfor %}
-
+	<!-- Fintech Audit Project -->
+	<div class="project-item">
+		<h3>Fintech Audit</h3>
+		<div class="post-date code">2026-03-31</div>
+		<div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+			<img src="{{ '/_projects/fintech-audit/fintech_audit.gif' | prepend: site.baseurl }}" alt="Fintech Audit Animation" style="max-width: 600px; width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+		</div>
+		<div class="gallery-caption" style="margin-top: 10px;">Digital transformation audit of German banking sector, with Power BI analytics and business model redesign.</div>
+		<div style="margin-top: 18px;">
+			<a href="{{ '/projects/fintech-audit' | prepend: site.baseurl }}" class="btn">View Project Details</a>
+		</div>
+	</div>
 </section>
