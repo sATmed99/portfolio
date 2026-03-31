@@ -31,6 +31,7 @@ collections:
   projects:
     output: true
     permalink: /projects/:name
+    output_ext: html
   talks:
     output: true
     permalink: /talks/:name

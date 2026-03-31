@@ -101,6 +101,7 @@ title: Projects
 
 	{% assign sorted = site.projects | sort: "date" | reverse %}
 	{% for post in sorted %}
+		{% if post.title %}
 		{% unless post.next %}
 			<h3 class="code year-header">{{ post.date | date: '%Y' }}</h3>
 		{% else %}
@@ -135,6 +136,7 @@ title: Projects
 				{% endif %}
 			</a>
 		</div>
+		{% endif %}
 
 	{% endfor %}
 
