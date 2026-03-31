@@ -100,15 +100,15 @@ title: Projects
 
 		<div class="project-item">
 			<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-				{% if post.gallery_images %}
+				{% if post.gallery %}
 					<h3>{{ post.title }}</h3>
 					<div class="post-date code">
 						{{ post.date | date: "%B %d, %Y" }}
 					</div>
 					<div class="project-gallery">
-						{% for gallery_item in post.gallery_images %}
+						{% for gallery_item in post.gallery %}
 							<div class="gallery-item">
-								<img src="{{ gallery_item.image | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}">
+								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}">
 								<div class="gallery-caption">{{ gallery_item.caption }}</div>
 							</div>
 						{% endfor %}

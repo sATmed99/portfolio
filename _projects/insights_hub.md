@@ -2,39 +2,19 @@
 title: Global Startup Analytics Hub
 date: 2026-03-31
 imageurl: /img/projects/insights_hub.png
-gallery_images:
-  - image: /img/projects/City_Intelligence.png
-    caption: >
-      City Intelligence – Comparative analysis of top cities by attractiveness, votes,
-      and funding. Real-time KPIs and top 15 cities ranked by attractiveness index,
-      providing market intelligence for ecosystem analysis.
-  - image: /img/projects/Germany_Deep_Dive.png
-    caption: >
-      Germany Deep Dive – Detailed analytics of German tech cities, including city
-      rankings, funding, and attractiveness. Specialized regional analysis of German
-      startup hubs, featuring city comparisons, sector distribution, and detailed
-      city metrics.
-  - image: /img/projects/Sector_Distribution.png
-    caption: >
-      Sector Distribution – Visualization of startup sector specialization and
-      distribution across cities. Cross-sectional analysis of Fintech, SaaS,
-      Healthtech, and Edtech sectors across major metro areas with attractiveness
-      heatmaps.
-  - image: /img/projects/Undervalued_Cities.png
-    caption: >
-      Undervalued Cities – Identification and analysis of cities with high potential
-      but low current recognition. Investment opportunity analysis identifying
-      high-attractiveness, low-recognition cities with rising status indicators.
-  - image: /img/projects/Vote_Distribution.png
-    caption: >
-      Votes Distribution – Funding vs. votes and city status breakdown for ecosystem
-      insights. Correlation analysis between community votes and funding levels,
-      with city status distribution metrics.
-  - image: /img/projects/Sector_Statistics.jpg
-    caption: >
-      Sector Statistics – Tabular summary of startup counts by sector for ecosystem
-      benchmarking. Detailed sector-by-city breakdown showing startup distribution
-      patterns: Fintech (965), SaaS (995), Healthtech (485), Edtech (370), Deeptech (360).
+gallery:
+  - image: City_Intelligence.png
+    caption: "City Intelligence - Top cities by attractiveness, votes, and funding"
+  - image: Germany_Deep_Dive.png
+    caption: "Germany Deep Dive - German tech cities analytics"
+  - image: Sector_Distribution.png
+    caption: "Sector Distribution - Startup sector across cities"
+  - image: Undervalued_Cities.png
+    caption: "Undervalued Cities - High potential cities"
+  - image: Vote_Distribution.png
+    caption: "Votes Distribution - Funding vs votes analysis"
+  - image: Sector_Statistics.jpg
+    caption: "Sector Statistics - Startup counts by sector"
 ---
 
 # Global Startup Analytics Hub 🌍
