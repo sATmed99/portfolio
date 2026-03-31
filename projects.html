@@ -117,7 +117,7 @@ title: Projects
 					<div class="project-gallery" style="display: block !important; margin-top: 16px !important; width: 100% !important; position: relative !important;">
 						{% for gallery_item in post.gallery %}
 							<div class="gallery-item" style="display: inline-block !important; width: 32% !important; margin: 0 0.66% 20px 0.66% !important; vertical-align: top !important; box-sizing: border-box !important;">
-								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}" style="width: 100% !important; height: 600px !important; object-fit: contain !important; border-radius: 8px !important; margin-bottom: 8px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important; display: block !important;">
+								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}" style="width: 100% !important; height: auto !important; object-fit: contain !important; border-radius: 8px !important; margin-bottom: 8px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important; display: block !important;">
 								<div class="gallery-caption">{{ gallery_item.caption }}</div>
 							</div>
 						{% endfor %}
