@@ -89,30 +89,54 @@ title: Projects
 		<div class="post-date code">2026-03-31</div>
 		<div class="project-gallery" style="display: grid; grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, 1fr); gap: 32px; width: 100%;">
 			<div class="gallery-item">
-				<img src="{{ '/img/projects/insights_hub/City_Intelligence.png' | prepend: site.baseurl }}" alt="City Intelligence - Top cities by attractiveness, votes, and funding">
+				<img src="{{ '/img/projects/insights_hub/City_Intelligence.png' | prepend: site.baseurl }}" alt="City Intelligence - Top cities by attractiveness, votes, and funding" onclick="openModal(this)">
 				<div class="gallery-caption">City Intelligence - Top cities by attractiveness, votes, and funding</div>
 			</div>
 			<div class="gallery-item">
-				<img src="{{ '/img/projects/insights_hub/Germany_Deep_Dive.png' | prepend: site.baseurl }}" alt="Germany Deep Dive - German tech cities analytics">
+				<img src="{{ '/img/projects/insights_hub/Germany_Deep_Dive.png' | prepend: site.baseurl }}" alt="Germany Deep Dive - German tech cities analytics" onclick="openModal(this)">
 				<div class="gallery-caption">Germany Deep Dive - German tech cities analytics</div>
 			</div>
 			<div class="gallery-item">
-				<img src="{{ '/img/projects/insights_hub/Sector_Distribution.png' | prepend: site.baseurl }}" alt="Sector Distribution - Startup sector across cities">
+				<img src="{{ '/img/projects/insights_hub/Sector_Distribution.png' | prepend: site.baseurl }}" alt="Sector Distribution - Startup sector across cities" onclick="openModal(this)">
 				<div class="gallery-caption">Sector Distribution - Startup sector across cities</div>
 			</div>
 			<div class="gallery-item">
-				<img src="{{ '/img/projects/insights_hub/Undervalued_Cities.png' | prepend: site.baseurl }}" alt="Undervalued Cities - High potential cities">
+				<img src="{{ '/img/projects/insights_hub/Undervalued_Cities.png' | prepend: site.baseurl }}" alt="Undervalued Cities - High potential cities" onclick="openModal(this)">
 				<div class="gallery-caption">Undervalued Cities - High potential cities</div>
 			</div>
 			<div class="gallery-item">
-				<img src="{{ '/img/projects/insights_hub/Vote_Distribution.png' | prepend: site.baseurl }}" alt="Votes Distribution - Funding vs votes analysis">
+				<img src="{{ '/img/projects/insights_hub/Vote_Distribution.png' | prepend: site.baseurl }}" alt="Votes Distribution - Funding vs votes analysis" onclick="openModal(this)">
 				<div class="gallery-caption">Votes Distribution - Funding vs votes analysis</div>
 			</div>
 			<div class="gallery-item">
-				<img src="{{ '/img/projects/insights_hub/Sector_Statistics.jpg' | prepend: site.baseurl }}" alt="Sector Statistics - Startup counts by sector">
+				<img src="{{ '/img/projects/insights_hub/Sector_Statistics.jpg' | prepend: site.baseurl }}" alt="Sector Statistics - Startup counts by sector" onclick="openModal(this)">
 				<div class="gallery-caption">Sector Statistics - Startup counts by sector</div>
 			</div>
 		</div>
+
+		<!-- Modal for image expansion -->
+		<div id="imgModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); align-items:center; justify-content:center;">
+			<span onclick="closeModal()" style="position:absolute;top:32px;right:48px;font-size:48px;color:#fff;cursor:pointer;font-family:sans-serif;">&times;</span>
+			<img id="modalImg" src="" alt="Expanded image" style="max-width:90vw; max-height:90vh; margin:auto; display:block; border-radius:12px; box-shadow:0 4px 24px rgba(0,0,0,0.4);">
+		</div>
+		<script>
+			function openModal(img) {
+				document.getElementById('imgModal').style.display = 'flex';
+				document.getElementById('modalImg').src = img.src;
+				document.getElementById('modalImg').alt = img.alt;
+			}
+			function closeModal() {
+				document.getElementById('imgModal').style.display = 'none';
+				document.getElementById('modalImg').src = '';
+			}
+			// Optional: close modal on background click
+			document.addEventListener('DOMContentLoaded', function() {
+				var modal = document.getElementById('imgModal');
+				modal.addEventListener('click', function(e) {
+					if (e.target === modal) closeModal();
+				});
+			});
+		</script>
 		<div style="margin-top: 18px;">
 			<a href="{{ '/projects/insights_hub' | prepend: site.baseurl }}" class="btn">View Project Details</a>
 		</div>
