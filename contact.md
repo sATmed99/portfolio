@@ -14,7 +14,6 @@ I'm always open to discussing finance operations, HR innovation, inclusive desig
 
 **Location:** Dhaka, Bangladesh
 
-**LinkedIn:** [linkedin.com/in/suraiyatithy](https://www.linkedin.com/in/suraiyatithy)
 
 **Nationality:** Bangladesh
 
