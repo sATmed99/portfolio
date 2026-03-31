@@ -12,7 +12,15 @@ published: true
 		<style>
 			body { margin: 0; padding: 0; background: #fff; }
 			/* Shared centered container — nav and content both live inside this */
-			   .site-container { max-width: 900px; margin: 0 auto; width: 100%; box-sizing: border-box; padding: 0 20px; }
+			   .site-container {
+				   max-width: none;
+				   width: 50vw;
+				   min-width: 320px;
+				   margin-left: 25vw;
+				   margin-right: 25vw;
+				   box-sizing: border-box;
+				   padding: 0 20px;
+			   }
 			/* Banner: full viewport width, image fills the container */
 			.site-header { width: 100%; line-height: 0; }
 			.site-header .site-container { padding: 0; }
