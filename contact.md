@@ -3,9 +3,10 @@ layout: page
 title: Contact
 ---
 
+
 ## Get In Touch
 
-I'm always open to discussing finance operations, HR innovation, and organizational development opportunities.
+I'm always open to discussing finance operations, HR innovation, inclusive design, and strategic organizational development opportunities.
 
 **Email:** [suraiyatithy@gmail.com](mailto:suraiyatithy@gmail.com)
 

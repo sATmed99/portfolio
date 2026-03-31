@@ -6,9 +6,10 @@ imageurl: /img/projects/hr-metrics.png
 categories: [Research, Human Resources]
 ---
 
-## Overview
 
-This was my capstone research project for my Bachelor's degree at East West University, examining how High-Performance Work Systems (HPWS) and Human Resource Information Systems (HRIS) influence employee performance in commercial banking environments.
+## Undergraduate Research Internship Overview
+
+This work was completed as part of my **undergraduate research internship** at East West University. The project examined how High-Performance Work Systems (HPWS) and Human Resource Information Systems (HRIS) influence employee performance in commercial banking environments. The internship provided hands-on experience in academic research, data collection, and analysis within the HR and banking sector context.
 
 ## Research Question
 
@@ -68,9 +69,10 @@ Operational Efficiency & ROI
 3. **Data-Driven HR:** HRIS data should inform strategic decisions about talent, compensation, and organizational structure
 4. **Employee-Centric Design:** Systems should balance organizational goals with employee development and engagement
 
+
 ## Professional Application
 
-This research directly informed my subsequent roles at Prime Finance & Investment Limited, where I applied these principles to:
+This undergraduate research internship was foundational for my career. The experience directly informed my subsequent roles at Prime Finance & Investment Limited, where I applied these principles to:
 - Design HR processes aligned with performance management
 - Leverage data systems for evidence-based decision making
 - Create organizational structures that enable high performance

@@ -3,9 +3,10 @@ layout: page
 title: Certifications & Professional Development
 ---
 
+
 ## Professional Certifications
 
-All certifications have been completed and verified through their respective issuing organizations.
+All certifications listed below have been completed and verified through their respective issuing organizations. They reflect my commitment to professional development in inclusive design, HR analytics, and data systems.
 
 ---
 

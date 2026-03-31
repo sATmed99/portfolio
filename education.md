@@ -5,6 +5,7 @@ title: Education
 
 ## Academic Background
 
+
 ### Bachelor of Business Administration (BBA)
 **East West University** | Dhaka, Bangladesh  
 *January 2018 – March 2023*
@@ -22,8 +23,9 @@ title: Education
 - Integrated Marketing Communication
 - International Business
 
-**Capstone Project:** *"The impact of High-Performance Work Systems and HRIS on employee performance"*  
-Examined the relationship between HPWS/HRIS implementation and employee performance in commercial banking using mixed-methods analysis (surveys and interviews). Developed a conceptual framework linking HR systems to ROI-based organizational efficiency outcomes.
+**Undergraduate Research Internship:**
+*The impact of High-Performance Work Systems and HRIS on employee performance*  
+Completed as part of my undergraduate research internship, this project examined the relationship between HPWS/HRIS implementation and employee performance in commercial banking using mixed-methods analysis (surveys and interviews). Developed a conceptual framework linking HR systems to ROI-based organizational efficiency outcomes.
 
 ---
 
@@ -70,14 +72,11 @@ Examined the relationship between HPWS/HRIS implementation and employee performa
 
 ---
 
+
 ## Language Proficiency
 
-### English Language
-**IELTS (International English Language Testing System)** | *December 28, 2024*
-
-- **Overall Band Score:** 5.5
-- **CEFR Level:** B2 (Upper Intermediate)
-- **Component Scores:**
+**English:** IELTS (B2, Overall Band 5.5)
+**Bengali:** Native
   - Listening: 5.0
   - Reading: 4.5
   - Writing: 5.5

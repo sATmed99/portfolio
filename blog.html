@@ -4,39 +4,37 @@ title: Blog
 ---
 
 <section>
+	<div class="site-container">
+		<div class="center">
+			<h1 class="title">Blog</h1>
+		</div>
+		<div class="divider"></div>
 
-	<div class="center">
-		<h1 class="title">Blog</h1>
-	</div>
-
-	<div class="divider"></div>
-
-	{% assign sorted = site.blog | sort: "date" | reverse %}
-	{% for post in sorted %}
-		{% unless post.next %}
-			<h3 class="code">{{ post.date | date: '%Y' }}</h3>
-		{% else %}
-			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-			{% if year != nyear %}
+		{% assign sorted = site.blog | sort: "date" | reverse %}
+		{% for post in sorted %}
+			{% unless post.next %}
 				<h3 class="code">{{ post.date | date: '%Y' }}</h3>
-			{% endif %}
-		{% endunless %}
+			{% else %}
+				{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+				{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+				{% if year != nyear %}
+					<h3 class="code">{{ post.date | date: '%Y' }}</h3>
+				{% endif %}
+			{% endunless %}
 
-		<ul>
-			<li>
-				<div class="title">
-					<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
-						<img src="{{ post.imageurl | prepend: site.baseurl }}" alt="{{ post.title }}" style="width: 100%; height: auto; max-height: 250px; object-fit: cover; border-radius: 8px;">
-						<h3 style="margin-top: 12px; margin-bottom: 0;">{{ post.title }}</h3>
-					</a>
-				</div>
-				<div class="post-date code" style="margin-top: 10px;">
-					<span>{{ post.date | date: "%b %d, %Y" }}</span>
-				</div>
-			</li>
-		</ul>
-
-	{% endfor %}
-
+			<ul style="list-style: none; padding: 0; margin: 0 0 32px 0;">
+				<li style="margin-bottom: 32px;">
+					<div class="title">
+						<a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}" style="text-decoration: none; color: inherit;">
+							<img src="{{ post.imageurl | prepend: site.baseurl }}" alt="{{ post.title }}" style="width: 100%; height: auto; max-height: 320px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+							<h3 style="margin-top: 16px; margin-bottom: 0;">{{ post.title }}</h3>
+						</a>
+					</div>
+					<div class="post-date code" style="margin-top: 10px;">
+						<span>{{ post.date | date: "%b %d, %Y" }}</span>
+					</div>
+				</li>
+			</ul>
+		{% endfor %}
+	</div>
 </section>

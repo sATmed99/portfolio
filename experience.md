@@ -3,7 +3,10 @@ layout: page
 title: Experience
 ---
 
+
 ## Professional Experience
+
+With a background in finance operations, human resource management, and strategic planning, I have developed a data-driven approach to solving complex organizational challenges. My experience spans client advisory, portfolio management, and HR systems design in Bangladesh's financial sector, with a strong focus on analytics, compliance, and operational excellence.
 
 ### Assistant Officer
 **Prime Finance & Investment Limited** | Dhaka, Bangladesh  
