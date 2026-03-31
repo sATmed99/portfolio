@@ -32,6 +32,12 @@
 			<span style="font-weight: bold; color: #000;">Certifications</span>
 		{% endif %}
 		
+		{% if page.url != '/projects' %}
+			<a href="{{ '/projects' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Projects</a>
+		{% else %}
+			<span style="font-weight: bold; color: #000;">Projects</span>
+		{% endif %}
+		
 		{% if page.url != '/blog' %}
 			<a href="{{ '/blog' | prepend: site.baseurl | prepend: site.url }}" style="color: #333; text-decoration: none; border: none;">Blog</a>
 		{% else %}
