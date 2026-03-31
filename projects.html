@@ -6,10 +6,10 @@ title: Projects
 <style>
 	.project-item {
 		margin-bottom: 40px;
-		padding: 20px;
-		border: 1px solid #eaeaea;
+		padding: 0;
+		border: none;
 		border-radius: 8px;
-		background: #fff;
+		background: transparent;
 		transition: box-shadow 0.3s ease;
 	}
 	
@@ -44,17 +44,13 @@ title: Projects
 	
 	.project-gallery {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: 1fr;
 		gap: 30px;
 		margin-top: 16px;
 		width: 100%;
-	}
-	
-	@media (max-width: 768px) {
-		.project-gallery {
-			grid-template-columns: 1fr;
-			gap: 20px;
-		}
+		max-width: 1400px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.gallery-item {
@@ -65,8 +61,8 @@ title: Projects
 	.gallery-item img {
 		width: 100%;
 		height: auto;
-		max-height: 400px;
-		object-fit: cover;
+		object-fit: contain;
+		min-height: 400px;
 		border-radius: 8px;
 		margin-bottom: 8px;
 		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
