@@ -8,27 +8,8 @@ title: About
 
 ## About Me
 
-<span id="typed-summary" style="font-size:1.1em;"></span><span id="typed-cursor" style="font-weight:bold; font-size:1.1em; color:#333;">|</span>
-<script>
-	// Cursor typing effect for About Me summary
-	document.addEventListener('DOMContentLoaded', function() {
-		var text = "Finance and marketing professional with over three years of client advisory and portfolio management experience in Bangladesh's financial sector, seeking to transition into international brand positioning and marketing strategy. Brings analytical fluency across Power BI, CRM platforms, and structured financial modelling, complemented by a sustained research interest in cross-cultural consumer behaviour and international brand strategy.";
-		var i = 0;
-		var speed = 18; // ms per character
-		var summary = document.getElementById('typed-summary');
-		var cursor = document.getElementById('typed-cursor');
-		function typeWriter() {
-			if (i < text.length) {
-				summary.textContent += text.charAt(i);
-				i++;
-				setTimeout(typeWriter, speed);
-			} else {
-				cursor.style.display = 'none';
-			}
-		}
-		typeWriter();
-	});
-</script>
+
+Finance and marketing professional with over three years of client advisory and portfolio management experience in Bangladesh's financial sector, seeking to transition into international brand positioning and marketing strategy. Brings analytical fluency across Power BI, CRM platforms, and structured financial modelling, complemented by a sustained research interest in cross-cultural consumer behaviour and international brand strategy.
 
 ### Professional Overview
 With expertise spanning finance operations, human resource management, and strategic planning, I bring a data-driven approach to solving complex organizational challenges. My career has been shaped by a commitment to:
