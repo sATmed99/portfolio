@@ -113,10 +113,10 @@ title: Projects
 					<div class="post-date code">
 						{{ post.date | date: "%B %d, %Y" }}
 					</div>
-					<div class="project-gallery">
+					<div class="project-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 16px; width: 100%;">
 						{% for gallery_item in post.gallery %}
-							<div class="gallery-item">
-								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}">
+							<div class="gallery-item" style="display: flex; flex-direction: column;">
+								<img src="{{ gallery_item.image | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ gallery_item.caption }}" style="width: 100%; height: auto; object-fit: contain; border-radius: 8px; margin-bottom: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); min-height: 600px;">
 								<div class="gallery-caption">{{ gallery_item.caption }}</div>
 							</div>
 						{% endfor %}
