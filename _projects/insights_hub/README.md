@@ -43,6 +43,35 @@ Global Startup Analytics Hub delivers enterprise-grade data analytics and visual
 - Ranked startups by voting data
 - Trending analysis
 
+## Platform Visualizations
+
+### Legacy Analytics Dashboard
+The platform includes comprehensive data visualization capabilities showcasing startup ecosystems:
+
+#### City Intelligence Dashboard
+![City Intelligence – Comparative analysis of top cities by attractiveness, votes, and funding.](City_Intelligence.png)
+*Real-time KPIs and top 15 cities ranked by attractiveness index, providing market intelligence for ecosystem analysis.*
+
+#### Germany Deep Dive
+![Germany Deep Dive – Detailed analytics of German tech cities, including city rankings, funding, and attractiveness.](Germany_Deep_Dive.png)
+*Specialized regional analysis of German startup hubs, featuring city comparisons, sector distribution, and detailed city metrics.*
+
+#### Sector Distribution
+![Sector Distribution – Visualization of startup sector specialization and distribution across cities.](Sector_Distribution.png)
+*Cross-sectional analysis of Fintech, SaaS, Healthtech, and Edtech sectors across major metro areas with attractiveness heatmaps.*
+
+#### Undervalued Cities
+![Undervalued Cities – Identification and analysis of cities with high potential but low current recognition.](Undervalued_Cities.png)
+*Investment opportunity analysis identifying high-attractiveness, low-recognition cities with rising status indicators.*
+
+#### Votes Distribution
+![Votes Distribution – Funding vs. votes and city status breakdown for ecosystem insights.](Vote_Distribution.png)
+*Correlation analysis between community votes and funding levels, with city status distribution metrics.*
+
+#### Sector Statistics
+![Sector Statistics – Tabular summary of startup counts by sector for ecosystem benchmarking.](Sector_Statistics.jpg)
+*Detailed sector-by-city breakdown showing startup distribution patterns: Fintech (965), SaaS (995), Healthtech (485), Edtech (370), Deeptech (360).*
+
 ## Project Structure
 
 ```
